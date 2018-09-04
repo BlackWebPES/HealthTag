@@ -8,5 +8,5 @@ main: HealthTag\HealthTag
 commands:
  ht:
   default: op
-  description: "Enable or disable healthtag"
+  description: "Main HealthTag Command"
   usage: "/ht"
