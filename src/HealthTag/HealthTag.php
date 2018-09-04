@@ -16,14 +16,14 @@ use pocketmine\utils\TextFormat;
 class HealthTag extends PluginBase implements Listener{
 		
 	public function onEnable(){ 
-		$this->getLogger()->info(TextFormat::YELLOW."HealthTag Loading...");
+		$this->getLogger()->info(TextFormat::YELLOW."HealthTag Loading");
 		$this->isEnabled = true;
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
-		$this->getLogger()->info(TextFormat::GREEN."HealthTag Enabled!");
+		$this->getLogger()->info(TextFormat::GREEN."HealthTag Enabled");
 	}
 
 	public function onDisable(){
-		$this->getLogger()->info("HealthTag Disabled.");
+		$this->getLogger()->info("HealthTag Disabled");
 	}
 	public function onJoin(PlayerJoinEvent $event){
 		$player = $event->getPlayer();
